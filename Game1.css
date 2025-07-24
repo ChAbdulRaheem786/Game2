@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.car{
+    width: 5rem;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    z-index: 5;
+    transition: top 0.2s ease;
+    top: 30rem;
+    left: 20rem;
+}
+.jump{
+    position: absolute;
+    top: 40rem;
+    left: 20rem;
+    width: 8rem;
+    height: 4rem;
+}
+.start {
+    position: absolute;
+    top: 45rem;
+    left: 20rem;
+    width: 8rem;
+    height: 4rem;
+}
+.road{
+    position: absolute;
+    height: 20rem;
+    width: 5100rem;
+    background-color: rgb(174, 218, 91);
+    top: 12rem;
+    border-bottom: 10px solid rgb(83, 82, 82);
+}
+.tree{
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    top: 15rem;
+}
+.building{
+    position: absolute;
+    width: 8rem;
+    height: 8rem;
+    top: 12rem;
+}
+.mountain{
+    position: absolute;
+    width: 10rem;
+    height: 12rem;
+    top: 8rem;
+}
+.restart{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.432);
+    z-index: 10;
+    position: absolute;
+    display: none;
+    transition: 1s;
+}
+.restart-button,.ok{
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%,-50%);
+    width: 12rem;
+    height: 6rem;
+}
+.hurdle{
+    z-index: 11;
+}
+.score{
+    font-size: 4rem;
+}
+.scoredisplay{
+    position: absolute;
+    font-size: 8rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.coin{
+    position: absolute;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: yellow;
+    top: 16.5rem;
+    border-radius: 50%;
+}
+.innercoin{
+    position: absolute;
+    height: 1rem;
+    width: 1rem;
+    background-color: rgb(255, 166, 0);
+    top: 0.25rem;
+    border-radius: 50%;
+    left: 0.25rem;
+    transition: 0.5s;
+}
+.rules{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.671);
+    z-index: 11;
+    position: absolute;
+    transition: none;
+}
+ul{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-20%);
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
